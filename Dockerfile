@@ -28,7 +28,7 @@ RUN \
   dpkg -i sbt-$SBT_VERSION.deb && \
   rm sbt-$SBT_VERSION.deb && \
   apt update && \
-  apt install -y sbt nodejs && \
+  apt install -y sbt nodejs npm && \
   sbt sbtVersion
 
 # Define working directory
